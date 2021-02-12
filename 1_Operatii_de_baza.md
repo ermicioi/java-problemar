@@ -2,7 +2,7 @@
 
 ## Afișarea la ecran și citirea de la tastatură
 
-#### Să se scrie un program care afișează la ecran mesajul "Hello World!".
+#### Să se scrie un program care afișează in consola mesajul "Hello World!".
 <details>
 <summary>Soluție Java:</summary>
 
