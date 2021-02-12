@@ -18,7 +18,7 @@ public class Main {
 </details>
 <br />
 
-#### Să se scrie un program care citește de la tastatură o valoare de tip întreg și o afișează la ecran. _Adițional experimintează și cu alte tipuri de date._
+#### Să se scrie un program care citește de la tastatură o valoare de tip întreg și o afișează in consola. _Adițional experimintează și cu alte tipuri de date._
 
 <details>
 <summary>Soluție Java:</summary>
