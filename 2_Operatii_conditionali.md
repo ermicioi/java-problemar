@@ -1,8 +1,7 @@
 # Operații condiționali
 ## Operatorul `if`
-**1. Să se scrie un program care va citi de la tastatură două numere de tip întreg și va afișa în consolă numărul mai mic**
-
-_Consideră implementarea unui program care va afișa numărul mai mare._
+**1. Să se scrie un program care va citi de la tastatură un număr de tip întreg și va afișa în consolă textul 
+"Test passed" dacă numărul este mai mare ca zero**
 
 <details>
 <summary>Soluție Java:</summary>
@@ -29,11 +28,42 @@ public class Main {
 </details>
 <br />
 
-
-
 <!-- -------------------------------------------------------- -->
 
 ## Operatorul `else`
+**1. Să se scrie un program care va citi de la tastatură două numere de tip întreg și va afișa în consolă numărul mai mic**
+
+_Consideră implementarea unui program care va afișa numărul mai mare._
+
+<details>
+<summary>Soluție Java:</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter x: ");
+        int x = scanner.nextInt();
+   
+        System.out.print("Enter y: ");
+        int y = scanner.nextInt();
+
+        if (x > y) {
+            System.out.println("The bigger number is x: " + x);
+        } else {
+            System.out.println("The bigger number or equal is y: " + y);
+        }
+    }
+
+}
+
+```
+</details>
+<br />
 
 <!-- -------------------------------------------------------- -->
 
