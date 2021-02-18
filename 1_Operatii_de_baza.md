@@ -381,6 +381,108 @@ public class Main {
 </details>
 <br />
 
+**11. Să se scrie un program care citeste de la tastatură un număr întreg `n`, unde 65 <= n <= 90 și afișează în consolă litera
+a cărui număr de ordine în tabelul de semne ASCII este `n`.**
+
+<details>
+<summary>Soluție Java:</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter n between 65 and 90: ");
+        int n = scanner.nextInt();
+
+        System.out.println("The letter is: " + (char) n);
+
+    }
+
+}
+```
+</details>
+<br />
+
+**12. Să se scrie un program care citește de la tastatură un caracter ce reprezintă o literă din alfabetul latin în 
+registrul mare (de la A la Z) și să se afișeze în consolă numărul de ordine al acestei litere in tabelul de semne ASCII.**
+
+<details>
+<summary>Soluție Java:</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter one character between A and Z: ");
+        final char c = scanner.nextLine().charAt(0);
+
+        System.out.println("The ASCII position is: " + (int) c);
+
+    }
+
+}
+```
+</details>
+<br />
+
+**13. Să se scrie un program care citește de la tastatură un număr `n` care reprezintă o sumă de lei. Să se scrie un
+program care va afișa în consolă list de bancnote care va reprezenta suma introdusă astfel ca numărul de bancnote să 
+fie minim. Să se consider că bancnote possible sunt în valoare de 1000, 500, 200, 100, 50, 20, 10, 5, 1 lei.**
+
+<details>
+<summary>Soluție Java:</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(final String[] args) {
+        final Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter sum: ");
+        int sum = scanner.nextInt();
+
+        System.out.println("1000: " + sum / 1000);
+        sum -= sum / 1000 * 1000;
+
+        System.out.println(" 500: " + sum / 500);
+        sum -= sum / 500 * 500;
+
+        System.out.println(" 200: " + sum / 200);
+        sum -= sum / 200 * 200;
+
+        System.out.println(" 100: " + sum / 100);
+        sum -= sum / 100 * 100;
+
+        System.out.println("  50: " + sum / 50);
+        sum -= sum / 50 * 50;
+
+        System.out.println("  20: " + sum / 20);
+        sum -= sum / 20 * 20;
+
+        System.out.println("  10: " + sum / 10);
+        sum -= sum / 10 * 10;
+
+        System.out.println("   5: " + sum / 5);
+        sum -= sum / 5 * 5;
+
+        System.out.println("   1: " + sum);
+    }
+
+}
+```
+</details>
+<br />
+
 <!-- ----------------------------------------------------------------------------------------- -->
 
 ## Operații pe biți
