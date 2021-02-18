@@ -1,12 +1,8 @@
 # Operații condiționali
 ## Operatorul `if`
-######  Să se scrie un program care va citi de la tastatură valoare de tip întreg `n` și va afișa la ecran mesajul "Test passed" în cazul în care `n` este mai mare ca `0`.
+**1. Să se scrie un program care va citi de la tastatură două numere de tip întreg și va afișa în consolă numărul mai mic**
 
-_Consideră implementarea programelor care întrunesc și următoarele condiții:_
-* `n` este mai mic ca `0`
-* `n` este egal cu `0`
-* `n` este mai mare egal cu `0`
-* `n` este mai mic egal cu `0` 
+_Consideră implementarea unui program care va afișa numărul mai mare._
 
 <details>
 <summary>Soluție Java:</summary>
@@ -43,11 +39,62 @@ public class Main {
 
 ## Operație ternară
 
----
+<!-- -------------------------------------------------------- -->
+
+## Operatorul `switch`
+
+**1. Să se scrie un program care va citi de la tastatură două numere de tip întreg și un operator dintre '+', '-', '\*', '/'. 
+Programul va afișa în consolă rezultatul aplicării operatorului asupra numerelor introduse.**
+
+_Exemplu: se introduc numerele întregi 5, 3 și operatorul '+', în consolă se va afișa 8_
 
 <details>
-<summary>Support teoretic & ajutor:</summary>
-<p>Contactează autorul la email-ul <a href="mailto:andrei.ermicioi@gmail.com">andrei.ermicioi@gmail.com</a> pentru support toeretic sau ajutor.</p>
-<p>Serviciu contra plată, 10 euro pentru 30 min de online call.</p>
+<summary>Soluție Java:</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(final String[] args) {
+        final Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter number x: ");
+        final int x = scanner.nextInt();
+
+        System.out.print("Enter number y: ");
+        final int y = scanner.nextInt();
+
+        System.out.print("Enter operator: ");
+        final char op = scanner.next().charAt(0);
+
+        int z = 0;
+        switch (op) {
+            case '+':
+                z = x + y;
+                break;
+
+            case '-':
+                z = x - y;
+                break;
+
+            case '*':
+                z = x * y;
+                break;
+
+            case '/':
+                z = x / y;
+                break;
+
+            default:
+                System.err.println("Unknown operation " + op);
+        }
+
+        System.out.println("Computed value is: " + z);
+    }
+
+}
+
+```
 </details>
 <br />
