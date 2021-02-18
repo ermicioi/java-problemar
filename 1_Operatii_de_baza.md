@@ -2,7 +2,7 @@
 
 ## Afișarea la ecran și citirea de la tastatură
 
-#### Să se scrie un program care afișează in consola mesajul "Hello World!".
+#### 1. Să se scrie un program care afișează in consola mesajul "Hello World!".
 <details>
 <summary>Soluție Java:</summary>
 
@@ -18,7 +18,7 @@ public class Main {
 </details>
 <br />
 
-#### Să se scrie un program care citește de la tastatură o valoare de tip întreg și o afișează in consola. _Adițional experimintează și cu alte tipuri de date._
+#### 2. Să se scrie un program care citește de la tastatură o valoare de tip întreg și o afișează in consola. _Adițional experimintează și cu alte tipuri de date._
 
 <details>
 <summary>Soluție Java:</summary>
@@ -42,7 +42,7 @@ public class Main {
 </details>
 <br />
 
-#### Să se scrie un program care citește de la tastatură două valori de tip real, `x` și `y` și apoi le schimbă valorile și le afișează. Exemplu: se citește de la tastatură `x = 5.3` și `y = 2.1`, după înversare `x = 2.1` și `y = 5.3`.
+#### 3. Să se scrie un program care citește de la tastatură două valori de tip real, `x` și `y` și apoi le schimbă valorile și le afișează. Exemplu: se citește de la tastatură `x = 5.3` și `y = 2.1`, după înversare `x = 2.1` și `y = 5.3`.
 
 <details>
 <summary>Soluție Java:</summary>
@@ -77,7 +77,7 @@ public class Main {
 
 ## Operații aritmetice
 
-#### Să se scrie un program care citește de la tastatură două valori de tip întreg și afișează la ecran suma lor. 
+#### 1. Să se scrie un program care citește de la tastatură două valori de tip întreg și afișează la ecran suma lor. 
 
 _Adițional experimintează cu alte tipuri de date și alte operații aritmetice precum scăderea, înmulțirea și împărțirea._
 
@@ -109,13 +109,13 @@ public class Main {
 </details>
 <br />
 
-#### Să se scrie un program care citește de la tastatură o valoare de tip întreg `x`, și efectuează una din operațiile următoare, al cărui rezultat este afișat la ecran:
+#### 2. Să se scrie un program care citește de la tastatură o valoare de tip întreg `x`, și efectuează una din operațiile următoare, al cărui rezultat este afișat la ecran:
 
 * `y = (x + 1) * 2`
 * `y = x * 4 + 6 / 2`
 * `y = 8 / (2 + x)`
 
-#### Să se scrie un program care citește viteza `v` (în kilometri pe oră) de la tastatură și o afișează transformată în metri pe secundă. Formula de calcul: `v = v * 1000 / 3600`.
+#### 3. Să se scrie un program care citește viteza `v` (în kilometri pe oră) de la tastatură și o afișează transformată în metri pe secundă. Formula de calcul: `v = v * 1000 / 3600`.
 
 <details>
 <summary>Soluție Java:</summary>
@@ -141,7 +141,7 @@ public class Main {
 </details>
 <br />
 
-#### Să se scrie un program care calculează valoarea expresiei `2.4 + 5 ^ 2` și o afișează la ecran, unde `^` este semnul la pătrat. _Adițional experimentează cu alte funcții precum "radical", "absolut", "minim' sau "maxim".
+#### 4. Să se scrie un program care calculează valoarea expresiei `2.4 + 5 ^ 2` și o afișează la ecran, unde `^` este semnul la pătrat. _Adițional experimentează cu alte funcții precum "radical", "absolut", "minim' sau "maxim".
 
 <details>
 <summary>Sugestii Java</summary>
@@ -170,7 +170,7 @@ public class Main {
 </details>
 <br />
 
-#### Să se scrie un program care calculează minimul și maximul a trei numere întregi introduse de la tastatură.
+#### 5. Să se scrie un program care calculează minimul și maximul a trei numere întregi introduse de la tastatură.
 
 <details>
 <summary>Soluție Java:</summary>
@@ -204,7 +204,7 @@ public class Main {
 </details>
 <br />
 
-#### Să se scrie un program care calculează câtul și restul împărțirii la 7 a unui număr întreg `n` citit de la tastatură.
+#### 6. Să se scrie un program care calculează câtul și restul împărțirii la 7 a unui număr întreg `n` citit de la tastatură.
 
 <details>
 <summary>Soluție Java:</summary>
@@ -233,7 +233,7 @@ public class Main {
 </details>
 <br />
 
-#### Să se scrie un program care calculează suma cifrelor unui număr întreg dat `n` din 3 cifre.
+#### 7. Să se scrie un program care calculează suma cifrelor unui număr întreg dat `n` din 3 cifre.
 
 <details>
 <summary>Soluție Java:</summary>
@@ -262,7 +262,7 @@ public class Main {
 </details>
 <br />
 
-#### Să se scrie un program care citește de la tastatură un număr `n`, unde `0 < n < 10000` și să se afișeze la ecran următoarele:
+#### 8. Să se scrie un program care citește de la tastatură un număr `n`, unde `0 < n < 10000` și să se afișeze la ecran următoarele:
 1. Ultima cifră al numărului introdus
 2. Penultima cifră al numărului introdus
 3. Câtul și restul împărțirii la 9 
@@ -291,7 +291,7 @@ public class Main {
 </details>
 <br />
 
-#### Să se scrie un program care citește de la tastatură un număr n, unde `0 < n < 10000` și să se afișeze la ecran următoarele:
+#### 9. Să se scrie un program care citește de la tastatură un număr `n`, unde `0 < n < 10000` și să se afișeze la ecran următoarele:
 1. Partea întreagă a lui `n`
 2. Partea fracționară a lui `n`
 3. Rotungirea lui `n` la întreg
@@ -314,6 +314,34 @@ public class Main {
         System.out.println("The fractional side of number is: " + (n - (int) n));
         System.out.println("The rounded number is: " + Math.round(n));
     }
+}
+```
+</details>
+<br />
+
+#### 10. Să se scrie un program care citește de la tastatură un număr întreg `n`, unde `100 <= n <= 999` și afișează răsturnatul numărului.
+
+Exemplu: De la tastatură este introdus numărul `123`, la ecran va fi afișat `321`.
+
+<details>
+<summary>Soluție Java:</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter n between 100 and 999: ");
+        int n = scanner.nextInt();
+
+        int x = n % 10 * 100 + n / 10 % 10 * 10 + n / 100;
+        System.out.println("Inverted number is: " + x);
+
+    }
+
 }
 ```
 </details>
