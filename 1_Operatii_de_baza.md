@@ -77,7 +77,7 @@ public class Main {
 
 ## Operații aritmetice
 
-#### 1. Să se scrie un program care citește de la tastatură două valori de tip întreg și afișează la ecran suma lor. 
+**1. Să se scrie un program care citește de la tastatură două valori de tip întreg și afișează la ecran suma lor.** 
 
 _Adițional experimintează cu alte tipuri de date și alte operații aritmetice precum scăderea, înmulțirea și împărțirea._
 
@@ -109,13 +109,40 @@ public class Main {
 </details>
 <br />
 
-#### 2. Să se scrie un program care citește de la tastatură o valoare de tip întreg `x`, și efectuează una din operațiile următoare, al cărui rezultat este afișat la ecran:
+**2. Să se scrie un program care citește de la tastatură o valoare de tip întreg `x`, și efectuează una din operațiile 
+următoare, al cărui rezultat este afișat la ecran:**
 
 * `y = (x + 1) * 2`
 * `y = x * 4 + 6 / 2`
 * `y = 8 / (2 + x)`
 
-#### 3. Să se scrie un program care citește viteza `v` (în kilometri pe oră) de la tastatură și o afișează transformată în metri pe secundă. Formula de calcul: `v = v * 1000 / 3600`.
+<details>
+<summary>Soluție Java:</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter x: ");
+        int x = scanner.nextInt();
+
+        int y = (x + 1) * 2;
+
+        System.out.println("The operation result is: " + y);
+    }
+
+}
+
+```
+</details>
+<br />
+
+**3. Să se scrie un program care citește viteza `v` (în kilometri pe oră) de la tastatură și o afișează transformată 
+în metri pe secundă. Formula de calcul: `v = v * 1000 / 3600`.**
 
 <details>
 <summary>Soluție Java:</summary>
@@ -141,7 +168,8 @@ public class Main {
 </details>
 <br />
 
-#### 4. Să se scrie un program care calculează valoarea expresiei `2.4 + 5 ^ 2` și o afișează la ecran, unde `^` este semnul la pătrat. _Adițional experimentează cu alte funcții precum "radical", "absolut", "minim' sau "maxim".
+**4. Să se scrie un program care calculează valoarea expresiei `2.4 + 5 ^ 2` și o afișează la ecran, unde `^` este 
+semnul la pătrat. _Adițional experimentează cu alte funcții precum "radical", "absolut", "minim' sau "maxim".**
 
 <details>
 <summary>Sugestii Java</summary>
@@ -170,7 +198,7 @@ public class Main {
 </details>
 <br />
 
-#### 5. Să se scrie un program care calculează minimul și maximul a trei numere întregi introduse de la tastatură.
+**5. Să se scrie un program care calculează minimul și maximul a trei numere întregi introduse de la tastatură.**
 
 <details>
 <summary>Soluție Java:</summary>
@@ -204,7 +232,8 @@ public class Main {
 </details>
 <br />
 
-#### 6. Să se scrie un program care calculează câtul și restul împărțirii la 7 a unui număr întreg `n` citit de la tastatură.
+**6. Să se scrie un program care calculează câtul și restul împărțirii la 7 a unui număr întreg `n` citit de la 
+tastatură.**
 
 <details>
 <summary>Soluție Java:</summary>
@@ -233,7 +262,7 @@ public class Main {
 </details>
 <br />
 
-#### 7. Să se scrie un program care calculează suma cifrelor unui număr întreg dat `n` din 3 cifre.
+**7. Să se scrie un program care calculează suma cifrelor unui număr întreg dat `n` din 3 cifre.**
 
 <details>
 <summary>Soluție Java:</summary>
@@ -262,7 +291,9 @@ public class Main {
 </details>
 <br />
 
-#### 8. Să se scrie un program care citește de la tastatură un număr `n`, unde `0 < n < 10000` și să se afișeze la ecran următoarele:
+**8. Să se scrie un program care citește de la tastatură un număr `n`, unde `0 < n < 10000` și să se afișeze la ecran 
+următoarele:**
+
 1. Ultima cifră al numărului introdus
 2. Penultima cifră al numărului introdus
 3. Câtul și restul împărțirii la 9 
@@ -291,7 +322,9 @@ public class Main {
 </details>
 <br />
 
-#### 9. Să se scrie un program care citește de la tastatură un număr `n`, unde `0 < n < 10000` și să se afișeze la ecran următoarele:
+**9. Să se scrie un program care citește de la tastatură un număr `n`, unde `0 < n < 10000` și să se afișeze la ecran 
+următoarele:**
+
 1. Partea întreagă a lui `n`
 2. Partea fracționară a lui `n`
 3. Rotungirea lui `n` la întreg
@@ -319,7 +352,8 @@ public class Main {
 </details>
 <br />
 
-#### 10. Să se scrie un program care citește de la tastatură un număr întreg `n`, unde `100 <= n <= 999` și afișează răsturnatul numărului.
+**10. Să se scrie un program care citește de la tastatură un număr întreg `n`, unde `100 <= n <= 999` și afișează 
+răsturnatul numărului.**
 
 Exemplu: De la tastatură este introdus numărul `123`, la ecran va fi afișat `321`.
 
@@ -351,7 +385,8 @@ public class Main {
 
 ## Operații pe biți
 
-#### Să se scrie un program care citește de la tastatură un număr întreg `n` și afișează la ecran rezultatul mișcării la dreapta cu un bit.
+**1. Să se scrie un program care citește de la tastatură un număr întreg `n` și afișează la ecran rezultatul mișcării 
+la dreapta cu un bit.**
 
 <details>
 <summary>Soluție Java:</summary>
@@ -387,7 +422,11 @@ Să luăm ca exemplu cifra `5` al cărei reprezentare binară este `101`. Atunci
 </details>
 <br />
 
-#### Să se scrie un program care va citi de la tastatură un număr întreg cu valoarea între `0` și `3`, ce va reprezentare starea a două întrerupătoare `A` și `B` (`0` - întrerupătoarele sunt deconectate, `1` - întrerupătorul `A` este conectat și `B` deconectat, `2` - întrerupătorul `A` este deconectat și `B` conectat, `3` - ambele întrerupătoare sunt conectate) și un număr întreg cu valoarea `1` sau `2` care va reprezenta starea conectată a întrerupătorului `A` sau `B`. Programul va afișa `1` dacă întrerupătorul respectiv este conectat și `0` contrar.
+**2. Să se scrie un program care va citi de la tastatură un număr întreg cu valoarea între `0` și `3`, ce va 
+reprezentare starea a două întrerupătoare `A` și `B` (`0` - întrerupătoarele sunt deconectate, `1` - întrerupătorul 
+`A` este conectat și `B` deconectat, `2` - întrerupătorul `A` este deconectat și `B` conectat, `3` - ambele 
+întrerupătoare sunt conectate) și un număr întreg cu valoarea `1` sau `2` care va reprezenta starea conectată a 
+întrerupătorului `A` sau `B`. Programul va afișa `1` dacă întrerupătorul respectiv este conectat și `0` contrar.**
 
 _Exemplu:_ Prima valoare introdusă este `2` (reprezentarea binară `10`) și a doua valoare introdusă `1` (valoare binară `01`) atunci programul va afișa `0`.
 
@@ -412,15 +451,17 @@ public class Main {
     }
 
 }
-
 ```
 </details>
+
 <br />
 
 <details>
 <summary>Explicație:</summary>
 
-Ficare bit al primei cifre introduse reprezintă starea întrerupătorului `A` sau `B`, spre exemplu bitul de pe poziția `0` ar reprezinta starea întrerupătorului `A` și bitul de pe poziția `1` ar reprezenta starea întrerupătorului `B` (spre exemplu cifra `2`, reprezentarea binară `10`, are reprezenta starea întrerupătorul `A` deconectat și `B` conectat). 
+Ficare bit al primei cifre introduse reprezintă starea întrerupătorului `A` sau `B`, spre exemplu bitul de pe poziția 
+`0` ar reprezinta starea întrerupătorului `A` și bitul de pe poziția `1` ar reprezenta starea întrerupătorului `B` 
+(spre exemplu cifra `2`, reprezentarea binară `10`, are reprezenta starea întrerupătorul `A` deconectat și `B` conectat). 
 
 Atunci cînd se execută și binar ficare bit de pe poziții corespunzătoare se verifică astfel că:
 
